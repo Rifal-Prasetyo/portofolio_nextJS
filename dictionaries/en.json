@@ -1,0 +1,92 @@
+{
+  "home": {
+    "header": {
+      "name": "RifalPras",
+      "homeBtn": "Home",
+      "aboutBtn": "About Me",
+      "portofolioBtn": "Portofolio",
+      "clientBtn": "Client",
+      "blogBtn": "Blog",
+      "contactBtn": "Contact",
+      "projectBtn": "Project",
+      "language": "Language"
+    },
+    "hero": {
+      "gretting": "Hello Everyone, My Name is ",
+      "myname": "Muhammad Rifal Prasetyo",
+      "status": ["Student", "Study"],
+      "personality": "A Backend Developer, UI/UX, Editor Video",
+      "contact_me": "Contact Me"
+    },
+    "skills": {
+      "backend": {
+        "title": "Backend Developer",
+        "excerpt": "I am a fullstack developer who focuses on web application development using well-known frameworks such as React, Laravel, NextJs, etc."
+      },
+      "design": {
+        "title": "UI / UX Design",
+        "excerpt": "Create web and mobile application designs on User Interface (UI) and Use Experience (UX) using Figma and Adobe Illustrator software."
+      },
+      "editing": {
+        "title": "Editing",
+        "excerpt": "Besides Website and UI/UX. I am proficient in video editing using Adobe Premiere Pro, Capcut, Alight Motion, Kinemaster, and VN software."
+      }
+    },
+    "about": {
+      "aboutMe": "About Me",
+      "myStudy": "I Study at the State Vocational High School 1 Bangsri",
+      "myMajor": "I majored in Software Engineering with an aim to specialize in Backend Developer.",
+
+      "letsBeFriend": "let's be friends",
+      "mySosmed": "I have several social media accounts, some of which are rarely online"
+    },
+    "portofolio": {
+      "portofolio": "Portofolio",
+      "myProject": "My Project",
+      "seeAll": "See More",
+      "popular": "Populer",
+      "newest": "New",
+      "button": "More"
+    },
+    "client": {
+      "client": "CLinet",
+      "partnership": "Partnership With",
+      "partnership_sub": "Previously, this section was still in the validation stage, the icon was just a sweetener."
+    },
+    "blog": {
+      "title": "Blog",
+      "header": "My Blog",
+      "seeAll": "More",
+      "button": "More"
+    },
+    "contact": {
+      "title": "Contact",
+      "contact_me": "Contact Me",
+      "contact_me_sub": "You can contact me for business purposes here",
+      "inputName": "Name",
+      "inputEmail": "Email",
+      "inputMessage": "Message",
+      "send": "send"
+    },
+    "footer": {
+      "category_writing": "Writing category",
+      "progamming_category": "Progamming",
+      "photography_category": "Photography",
+      "link": "Links",
+      "homeBtn": "Home",
+      "aboutBtn": "About Me",
+      "portofolioBtn": "Portofolio",
+      "clientBtn": "Client",
+      "blogBtn": "Blog",
+      "contactBtn": "Contact",
+      "projectBtn": "Project",
+      "maker": ["Created By ", "use"]
+    }
+  },
+  "allproject": {
+    "backButton": "Kembali ke Portofolio",
+    "heading1": "Project Saya",
+    "heading2": "Lihat semua Project yang telah saya kerjakan"
+  },
+  "project": {}
+}

@@ -1,0 +1,92 @@
+{
+  "home": {
+    "header": {
+      "name": "RifalPras",
+      "homeBtn": "Beranda",
+      "aboutBtn": "Tentang Saya",
+      "portofolioBtn": "Portofolio",
+      "clientBtn": "Klien",
+      "blogBtn": "Blog",
+      "contactBtn": "Kontak",
+      "projectBtn": "Project",
+      "language": "Bahasa"
+    },
+    "hero": {
+      "gretting": "Halo Semua✋,Saya ",
+      "myname": "Muhammad Rifal Prasetyo",
+      "status": ["Pelajar", "Belajar"],
+      "personality": "Seorang Backend Developer, UI / UX, Editor video",
+      "contact_me": "Hubungi Saya"
+    },
+    "skills": {
+      "backend": {
+        "title": "Backend Developer",
+        "excerpt": "Saya adalah fullstack developer yang fokus pada pengembangan aplikasi web dengan menggunakan framework terkenal seperti React, Laravel, NextJs, Dll"
+      },
+      "design": {
+        "title": "UI / UX Design",
+        "excerpt": "Membuat desain aplikasi web dan mobile pada User Interface(UI) dan Use Experience(UX) dengan menggunakan software Figma dan Adobe Ilustrator"
+      },
+      "editing": {
+        "title": "Editing",
+        "excerpt": "Selain Website dan UI/UX. saya mahir dalam membuat video editing menggunkan software Adobe Premiere Pro, Capcut, Alight Motion, Kinemaster, dan VN"
+      }
+    },
+    "about": {
+      "aboutMe": "Tentang Saya",
+      "myStudy": "Saya Belajar di Sekolah Menengah Kejuruan Negeri 1 Bangsri",
+      "myMajor": "saya mengambil jurusan Rekayasa Perangkat lunak dengan bidik keahlian di Backend Developer",
+
+      "letsBeFriend": "Mari berteman",
+      "mySosmed": "Saya memiliki beberapa akun sosmed, sebagian jarang online"
+    },
+    "portofolio": {
+      "portofolio": "Portofolio",
+      "myProject": "Project Saya",
+      "seeAll": "Lihat Semua",
+      "popular": "Populer",
+      "newest": "terbaru",
+      "button": "Selengkapnya"
+    },
+    "client": {
+      "client": "Klien",
+      "partnership": "bekerja sama dengan",
+      "partnership_sub": "Sebelumnya untuk bagian ini masih tahap validasi,icon hanya pemanis"
+    },
+    "blog": {
+      "title": "Blog",
+      "header": "Tulisan Saya",
+      "seeAll": "Lihat Semua",
+      "button": "Selengkapnya"
+    },
+    "contact": {
+      "title": "Kontak",
+      "contact_me": "Hubungi Saya",
+      "contact_me_sub": "Anda dapat menghubungi saya untuk keperluan bisnis disini",
+      "inputName": "Nama",
+      "inputEmail": "Email",
+      "inputMessage": "Pesan",
+      "send": "Kirim"
+    },
+    "footer": {
+      "category_writing": "Kategori tulisan",
+      "progamming_category": "Progamming",
+      "photography_category": "Fotografi",
+      "link": "Tautan",
+      "homeBtn": "Beranda",
+      "aboutBtn": "Tentang Saya",
+      "portofolioBtn": "Portofolio",
+      "clientBtn": "Klien",
+      "blogBtn": "Blog",
+      "contactBtn": "Kontak",
+      "projectBtn": "Project",
+      "maker": ["Dibuat Oleh", "menggunakan"]
+    }
+  },
+  "allproject": {
+    "backButton": "Kembali ke Portofolio",
+    "heading1": "Project Saya",
+    "heading2": "Lihat semua Project yang telah saya kerjakan"
+  },
+  "project": {}
+}
