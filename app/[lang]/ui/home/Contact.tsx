@@ -21,7 +21,7 @@ export default function Contact({ locale }: any) {
                         </div>
                         <div className="w-full px-4 mb-8">
                             <label htmlFor="name" className="text-base font-bold text-primary">{locale.inputMessage}</label>
-                            <textarea name="note" value={""} id="note_contact" className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" placeholder="mencoba"> </textarea>
+                            <textarea name="note" readOnly id="note_contact" className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" placeholder="mencoba" />
                         </div>
                         <div className="w-full">
                             <button name="submit" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">{locale.send}</button>

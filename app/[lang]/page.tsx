@@ -33,10 +33,6 @@ export default async function Page({ params: { lang } }: any) {
 
     return (
         <>
-            {/* {dataQuery?.map((data: any, index: any) => (
-                <h1 key={index}>{data.title}</h1>
-            ))} */}
-
             <Header locale={dict.home.header} />
             <Hero locale={dict.home.hero} />
             <Skills locale={dict.home.skills} />
