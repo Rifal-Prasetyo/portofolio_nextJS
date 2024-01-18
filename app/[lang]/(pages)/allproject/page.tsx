@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { getDictionary } from "../../dictionaries"
-import Divider from "../../ui/Divider";
-import Card from "../../ui/allproject/Card";
-import Footer from "../../ui/home/footer";
-
+import Divider from "../../components/Divider";
+import Card from "../../components/home/Card";
+import Footer from "../../ui/home/Footer";
 export default async function AllProject({ params: { lang } }: any) {
     const dict = await getDictionary(lang);
     return (
@@ -14,13 +13,11 @@ export default async function AllProject({ params: { lang } }: any) {
                 <h2 className="font-thin text-lg md:text-2xl text-gray mb-2">{dict.allproject.heading2}</h2>
                 <Divider />
                 <div className="flex flex-wrap px-2 py-2">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {/* <Card locale={} dataFetch={} /> */}
+
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

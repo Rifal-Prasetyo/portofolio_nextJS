@@ -1,7 +1,35 @@
+import { PrismaClient } from "@prisma/client";
 import Card from "../../components/home/Card";
 import { cardDummy } from "@/app/[lang]/dummyData/placeholder_data";
-export default function Portofolio({ locale }: any) {
-    let data = cardDummy;
+export default async function Portofolio({ locale }: any) {
+    // let data = cardDummy;
+    const prisma = new PrismaClient();
+    const dataPopular = await prisma.project.findMany({
+        take: 3,
+        orderBy: [
+            {
+                views: 'desc'
+            }
+        ],
+        include: {
+            author: {
+                select: { name: true }
+            }
+        },
+    });
+    const dataNew = await prisma.project.findMany({
+        take: 3,
+        orderBy: [
+            {
+                id: 'desc'
+            }
+        ],
+        include: {
+            author: {
+                select: { name: true }
+            }
+        }
+    });
     return (
         <section id="portofolio" className="pt-20 pb-16 bg-slate-100 sembunyi">
             <div className="container mx-auto">
@@ -19,14 +47,14 @@ export default function Portofolio({ locale }: any) {
                 </div>
                 <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12
             xl:mx-auto">
-                    <Card dataFetch={data} locale={locale} />
+                    <Card dataFetch={dataPopular} locale={locale} />
                 </div>
                 <div className="w-full px-4 flex flex-wrap mb-4 ">
                     <h4 className="text-primary uppercase font-semibold text-lg ">{locale.newest}</h4>
                 </div>
                 <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12
             xl:mx-auto">
-                    <Card dataFetch={data} locale={locale} />
+                    <Card dataFetch={dataNew} locale={locale} />
 
 
                 </div>

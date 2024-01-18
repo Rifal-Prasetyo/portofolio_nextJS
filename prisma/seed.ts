@@ -61,6 +61,7 @@ async function main(){
             excerpt: 'lorem-ipsum',
             content: 'indonesia',
             slug: 'lorem-ipsum-dolor',
+            link: '/lorem_ipsum',
             views: 11,
             categoryId: 1,
             authorId: 1
@@ -73,6 +74,7 @@ async function main(){
             excerpt: 'lorem-ipsum',
             content: 'indonesia',
             slug: 'lorem-ipsum-dolor',
+            link: '/lorem_ipsum',
             views: 11,
             categoryId: 2,
             authorId: 2

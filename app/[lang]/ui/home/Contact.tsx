@@ -9,7 +9,7 @@ export default function Contact({ locale }: any) {
                         <p className="font-medium text-md text-secondary md:text-lg">{locale.contact_me_sub}</p>
                     </div>
                 </div>
-                <form action="formData.php" method="post">
+                <form action={"/api/contact"} method="post">
                     <div className="w-full lg:w-2/3 lg:mx-auto">
                         <div className="w-full px-4 mb-8">
                             <label htmlFor="name" className="text-base font-bold text-primary">{locale.inputName}</label>
@@ -21,7 +21,7 @@ export default function Contact({ locale }: any) {
                         </div>
                         <div className="w-full px-4 mb-8">
                             <label htmlFor="name" className="text-base font-bold text-primary">{locale.inputMessage}</label>
-                            <textarea name="note" readOnly id="note_contact" className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" placeholder="mencoba" />
+                            <textarea name="note" id="note_contact" className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" placeholder="mencoba" />
                         </div>
                         <div className="w-full">
                             <button name="submit" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">{locale.send}</button>

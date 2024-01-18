@@ -10,11 +10,18 @@ export async function POST(request : Request) {
 
     async function coba() {
         const user = await prisma.user.findFirst({
+            where: {email: username, password: password},
             select: {name: true, email: true, password: true}
         });
-        console.log(user);
+        return user;
     }
-    coba();
+    const result : any =  await coba();
+    if(result) {
+        NextResponse.next().cookies.set('key', 'coy' + result.email);
+        return NextResponse.redirect(new URL('/dashboard', request.url));
+    } else {
+        return NextResponse.json({message : "username atau Password salah"}, {status : 500});
+    }
     console.log('coy');
     // if({user}) {
     //     if(rememberButton > 0) {

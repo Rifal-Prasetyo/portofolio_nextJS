@@ -1,9 +1,30 @@
+import { PrismaClient } from "@prisma/client";
 import CardBlog from "../../components/home/Card_blog";
 import { blogDummy } from "../../dummyData/placeholder_data";
 
 
-export default function Blog({ locale }: any) {
-    const data = blogDummy;
+export default async function Blog({ locale }: any) {
+    const prisma = new PrismaClient();
+    const blogs = await prisma.blog.findMany({
+
+        orderBy: [
+            {
+                id: 'desc'
+            }
+        ],
+        select: {
+            title: true,
+            image: true,
+            excerpt: true,
+            slug: true,
+            views: true,
+            author: true,
+            category: {
+                select: { name: true }
+            }
+        },
+    });
+    console.log(blogs);
     return (
         <section id="blog" className="pt-36 pb-32 bg-slate-100 sembunyi">
             <div className="container mx-auto">
@@ -20,7 +41,7 @@ export default function Blog({ locale }: any) {
 
                 {/* <!-- bagian card tulisan  --> */}
                 <div className="w-full mt-2 px-4 flex flex-wrap md:flex-nowrap gap-4">
-                    <CardBlog dataFetch={data} />
+                    <CardBlog dataFetch={blogs} />
 
                 </div>
 

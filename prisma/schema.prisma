@@ -13,12 +13,15 @@ model Blog {
   image      String   @db.VarChar(255)
   excerpt    String   @db.VarChar(500)
   content    String   @db.Text
+  link       String   @db.VarChar(255)
   slug       String   @db.VarChar(500)
   categoryId Int      @unique(map: "categoryId")
   views      Int      @default(1)
-  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade, map: "Blog_categoryId_fkey")
   authorId   Int
-  author     User     @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  author     User     @relation(fields: [authorId], references: [id], onDelete: Cascade, map: "Blog_authorId_fkey")
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade, map: "Blog_categoryId_fkey")
+
+  @@index([authorId], map: "Blog_authorId_fkey")
 }
 
 model Category {
@@ -42,7 +45,9 @@ model Project {
   slug     String @db.VarChar(500)
   views    Int    @default(1)
   authorId Int
-  author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, map: "Project_authorId_fkey")
+
+  @@index([authorId], map: "Project_authorId_fkey")
 }
 
 model User {
